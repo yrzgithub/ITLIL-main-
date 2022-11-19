@@ -1,0 +1,7 @@
+flask
+secure-smtplib
+email
+opencv-python
+numpy
+pickles
+face_recognition

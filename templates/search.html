@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1 style="font-size: 45px;text-align: center;">Search Results</h1>
+</head>
+<body>
+    {% for person in people %}
+    <div style="display: flex;align-items:center;justify-content:center;">
+        <div style="width:fit-content;display:flex; justify-content: center;margin-bottom: 50px;">
+            <div style="display: flex;justify-items:flex-end;margin-right: 30px;">
+                <img src="{{person.html_path()}}" height="300" width="400">
+            </div>
+                <div style="margin-left: 20px;">
+                    <h2 style="text-align: center;">Person Details</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>ID : </label>
+                            </td>
+                            <td>
+                                <label>{{person.id_no}}</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Name : </label>
+                            </td>
+                            <td>
+                                <label> {{person.name}}</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Lost Location : </label>
+                            </td>
+                            <td>
+                                <label>{{person.lost_location}}</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Age : </label>
+                            </td>
+                            <td>
+                                <label>{{person.age}}</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Gender : </label>
+                            </td>
+                            <td>
+                                <label>{{person.gender}}</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>DOB : </label>
+                            </td>
+                            <td>
+                                <label>{{person.dob}}</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Comments : </label>
+                            </td>
+                            <td>
+                                <label>{{person.comments}}</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+    {%endfor%}
+</body>
+</html>

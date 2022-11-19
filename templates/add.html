@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 style="display: flex;justify-content: center;">File Upload Page</h1>
+    </head>
+    <div style="display: flex;justify-content:center;align-items:center;">
+        <form name="submit" method="POST" enctype="multipart/form-data">
+            <table style="border-spacing: 20px;">
+                <tr>
+                    <td>
+                        <label style="font-size: 24px">Upload image</label>
+                    </td>
+                    <td>
+                        <input name="file" type="file" accept="image/*"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="font-size: 25px">Name</label>
+                    </td>
+                    <td>
+                        <input name="person_name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="font-size: 25px">Lost location</label>
+                    </td>
+                    <td>
+                        <input name="lost_location"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="font-size: 25px">Age</label>
+                    </td>
+                    <td>
+                        <input type="number" name="person_age"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="font-size: 25px">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"/>
+                        <small>Male</small>
+                        <input type="radio" name="gender" value="Female"/>
+                        <small>Female</small>
+                        <input type="radio" name="gender" value="Other"/>
+                        <small>Other</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="font-size: 24px">DOB</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="font-size: 24px">Comments</label>
+                    </td>
+                    <td>
+                        <textarea name="comments" style="height: 100px; width : 300px; margin-bottom: 20px;"></textarea>
+                    </table>
+                    </td>
+                </tr>
+            <div style="display: flex;justify-content:center">
+                <button style="padding: 8px;font-size: 15px;width: 100px;margin-right: 5px;" id="add" name="l" type="submit" value="add_acc" style="font-size: large;margin-left: 5px;">Add</button>
+            </div>
+        </form>
+    </div>
+</html>
